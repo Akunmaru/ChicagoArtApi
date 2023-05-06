@@ -1,0 +1,126 @@
+/* RESET DEFAULT BROWSER STYLES */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    padding: 0;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+  }
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top: -20px;
+    background-image: url(https://offloadmedia.feverup.com/secretchicago.com/wp-content/uploads/2022/02/24223933/Art-Institute-Of-Chicago-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    font-size: medium;
+}
+
+td {
+    font-size: large;
+}
+
+th {
+    font-size: medium;
+}
+
+tr {
+    font-size: x-large;
+}
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    padding: 0;
+}
+
+button {
+    background-color: rgb(249, 90, 249) !important;
+    border: 4px solid white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: rgb(168, 28, 193) !important;
+    border: 4px solid white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.container{
+    width: 40%;
+    margin: 2rem auto;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem;
+    padding-top: 20px;
+}
+
+.gallery__img{
+    padding: 10px;
+    background-color: black;
+}
+
+.gallery__img:hover{
+    padding: 10px;
+    background-color: red;
+}
+
+
+#juice{
+    background-color: white;
+    margin-left: auto;  
+    margin-right: auto;  
+    border-collapse: collapse;    
+    width: 573px;  
+    text-align: center;  
+    font-size: 50px;  
+}
+
+
+#apple {
+    margin-top: 20px;
+    vertical-align: middle;
+    height: 200px;
+    width: 200px;
+}
+
+figure{
+    padding-left: 200px;
+    height: 150px;
+    width: 150px;
+}
+
+#helpme{
+    text-align: center;
+    font-size: large;
+}
+
+.row {
+    display: flex;
+  }
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}

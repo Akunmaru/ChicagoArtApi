@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/css/photo.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/main.js" defer></script>
+<title>API CAI</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-info navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="/site/base.html"><img src="/images/logo-aic.png" alt="CAI Logo" class="align-items-left img-thumbnail" ></a>
+            <div class="container text-center">
+                <h1 class="text-center align-items-center">Chicago Art Institute</h1>
+            </div>
+            <button
+                class="navbar-toggler text"
+                type="button"
+                data-bs-toggle = "collapse"
+                data-bs-target ="#navmenu">
+                <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a href="/site/info.html" class="nav-link text-dark">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/site/photos.html" class="nav-link text-dark">Our Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/site/contact.html" class="nav-link text-dark">Contact Us!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="row">
+        <!-- Figures 1 through 3 -->
+        <div class="column">
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); getInfo(this.id, event)" >
+                <img class="gallery__img" src="/images/displays/ewer.jpeg" alt="6596">
+            </figure>
+        </div>
+        <div class="column">
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img class="gallery__img" src="/images/displays/ready-to-wear.jpeg" alt="2189">
+            </figure>
+        </div>
+        <div class="column">
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img class="gallery__img" src="/images/displays/solitaire.jpeg" alt="20509">
+            </figure>
+        </div>
+        <!-- Figures 4 through 6 -->
+        <div class="column">
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img class="gallery__img" src="/images/displays/L'Estaque.jpeg" alt="9010">
+            </figure>
+        </div>
+        <div class="column">
+            <figure class="gallery__item gallery__item--5" id="fig5" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img class="gallery__img" src="/images/displays/silver_sun.jpeg" alt="65868">
+            </figure>
+        </div>
+        <div class="column">
+            <figure class="gallery__item gallery__item--6" id="fig6" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img class="gallery__img" src="/images/displays/hinoki.jpeg" alt="189207">
+            </figure>
+        </div>
+        <!-- Figures 7 through 9 -->
+        <div class="column">
+            <figure class="gallery__item gallery__item--7" id="fig7" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img class="gallery__img" src="/images/displays/greyed_rainbow.jpeg" alt="83642">
+            </figure>
+        </div>
+        <div class="column">
+            <figure class="gallery__item gallery__item--8" id="fig8" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img class="gallery__img" src="/images/displays/coffer.jpeg" alt="156442">
+            </figure>
+        </div>
+        <div class="column">
+            <figure class="gallery__item gallery__item--8" id="fig9" onclick="event.stopPropagation(); getInfo(this.id, event)">
+                <img class="gallery__img" src="/images/displays/earthly_paradise.jpeg" alt="144361">
+            </figure>
+        </div>
+    </div>
+    <div id="helpme">
+        <button onClick="window.location.reload();">Clear Data</button>
+    </div>
+    <div> 
+        <h1 id="test"></h1>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* RESET DEFAULT BROWSER STYLES */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    padding: 0;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+  }
+
+body{
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top: -20px;
+    background-image: url(https://media.timeout.com/images/102850781/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    font-size: medium;
+}
+
+td {
+    font-size: large;
+}
+
+th {
+    font-size: medium;
+}
+
+tr {
+    font-size: x-large;
+}
